@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Study with Harun Bhaiya</title>
+<meta content="Making Math &amp; English simple for everyone. Clear lessons, smart tips &amp; exam-focused practice with Harun Bhaiya." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root{ --bg:#0f1226; --bg2:#0b0f21; --text:#f7f9ff; --muted:#b8c4e3; --card:#13183a;
+           --accent:#6ee7ff; --accent2:#a78bfa; --accent3:#34d399; --ring: rgba(167,139,250,.35);}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--bg),var(--bg2));color:var(--text);
+      font-family:'Plus Jakarta Sans',system-ui,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;scroll-behavior:smooth}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:1120px;margin:0 auto;padding:24px}
+    .nav{position:sticky;top:0;background:rgba(13,16,39,.6);backdrop-filter:blur(10px);
+      border-bottom:1px solid rgba(255,255,255,.06);z-index:50}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px}
+    .logo{width:42px;height:42px;border-radius:12px;background:conic-gradient(from 180deg at 50% 50%, #6ee7ff, #a78bfa, #34d399, #6ee7ff);
+      display:grid;place-items:center;color:#06131a;font-weight:900;box-shadow:0 8px 30px var(--ring)}
+    .btn{display:inline-block;border:none;cursor:pointer;padding:12px 18px;border-radius:14px;font-weight:800;letter-spacing:.3px;
+      transition:transform .08s ease, box-shadow .2s ease}
+    .btn-primary{background:linear-gradient(90deg,var(--accent2),var(--accent));color:#06131a;box-shadow:0 10px 30px var(--ring)}
+    .btn-primary:hover{transform:translateY(-1px)}
+    .btn-outline{background:transparent;border:2px solid var(--accent);color:var(--text)}
+    .btn-ghost{background:transparent;color:var(--text)}
+    .hero{position:relative;overflow:hidden}
+    .hero-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center;padding:60px 0}
+    .headline{font-size:44px;line-height:1.15;margin:0 0 8px 0;font-weight:800}
+    .sub{font-size:18px;color:var(--muted);margin:0 0 14px 0}
+    .badge{display:inline-block;background:rgba(110,231,255,.15);color:var(--accent);padding:6px 12px;border-radius:999px;
+      font-size:12px;font-weight:800;letter-spacing:.4px}
+    .glass{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);padding:20px;border-radius:16px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .section{padding:40px 0} .section h2{margin:0 0 10px 0;font-size:28px}
+    .list{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+    .list li{display:flex;gap:10px;align-items:flex-start}
+    .dot{width:9px;height:9px;border-radius:50%;background:linear-gradient(90deg,var(--accent3),var(--accent));margin-top:9px;flex:0 0 9px}
+    .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease, transform .6s ease}
+    .reveal.in{opacity:1;transform:translateY(0)}
+    .shape{position:absolute;filter:blur(50px);opacity:.55}
+    .s1{width:260px;height:260px;left:-60px;top:-40px;background:radial-gradient(circle,#a78bfa,transparent 60%);animation:float 9s ease-in-out infinite}
+    .s2{width:300px;height:300px;right:-70px;bottom:-30px;background:radial-gradient(circle,#6ee7ff,transparent 60%);animation:float 12s ease-in-out infinite reverse}
+    @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-14px)}100%{transform:translateY(0)}}
+    .testi p{color:var(--muted);margin:6px 0 0 0} .quote{font-size:15px;line-height:1.5}
+    .footer{padding:26px 0;color:var(--muted);font-size:14px;text-align:center;border-top:1px solid rgba(255,255,255,.06)}
+    .whatsapp{position:fixed;right:18px;bottom:18px;z-index:60}
+    .wa-btn{display:flex;align-items:center;gap:8px;background:#25D366;color:#071b11;padding:12px 14px;border-radius:999px;font-weight:800;
+      box-shadow:0 10px 30px rgba(37,211,102,.35)}
+    .wa-btn svg{width:18px;height:18px}
+    @media (max-width: 960px){ .hero-wrap{grid-template-columns:1fr;gap:18px;padding:36px 0} .headline{font-size:34px} .grid-3{grid-template-columns:1fr} .grid-2{grid-template-columns:1fr} }
+  </style>
+<script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"EducationalOrganization",
+    "name":"Study with Harun Bhaiya",
+    "url":"https://example.com",
+    "email":"studywithharunbhaiya@gmail.com",
+    "description":"Math & English lessons — clear, friendly and exam-focused."
+  }
+  </script>
+</head>
+<body>
+<header class="nav">
+<div class="container nav-inner">
+<div class="brand"><div class="logo">HB</div>Study with Harun Bhaiya</div>
+<nav style="display:flex;gap:14px;flex-wrap:wrap">
+<a class="btn-ghost" href="#" title="YouTube (coming soon)">YouTube</a>
+<a class="btn-ghost" href="https://www.facebook.com/share/1AxJMSRxcx/?mibextid=wwXIfr" title="Facebook Page">Facebook</a>
+<a class="btn-outline" href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+<section class="hero">
+<div class="shape s1"></div>
+<div class="shape s2"></div>
+<div class="container hero-wrap">
+<div class="reveal">
+<span class="badge">LEARN · PRACTICE · SUCCEED</span>
+<h1 class="headline">Making <span style="background:linear-gradient(90deg,var(--accent2),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent">Math &amp; English</span> simple for everyone</h1>
+<p class="sub">Clear lessons, smart techniques, and exam-focused practice—guided by Harun Bhaiya. Start your learning journey today!</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
+<a class="btn btn-primary" href="https://wa.me/8801303676569" rel="noopener" target="_blank">Join on WhatsApp</a>
+<a class="btn btn-outline" href="mailto:studywithharunbhaiya@gmail.com">Email us</a>
+</div>
+<div class="glass" style="margin-top:16px;padding:12px 14px;border-radius:14px;display:inline-flex;gap:10px;align-items:center">
+<div style="width:8px;height:8px;border-radius:50%;background:var(--accent3)"></div>
+<div style="font-size:13px;color:var(--muted)">
+            Free recorded classes uploaded weekly · Private batches available
+          </div>
+</div>
+</div>
+<div class="reveal">
+<div class="card" style="padding:0;overflow:hidden">
+<div style="background:linear-gradient(180deg,#1d2452,transparent);padding:16px 16px 0 16px">
+<h3 style="margin:0">Quick Topics</h3>
+<p style="margin:4px 0 12px 0;color:var(--muted);font-size:14px">Bite-sized videos you can watch anytime</p>
+</div>
+<div class="grid-3" style="padding:16px">
+<div class="card"><strong>Algebra Basics</strong><p class="sub" style="margin:6px 0 0 0">Variables, equations &amp; factorization</p></div>
+<div class="card"><strong>Geometry Essentials</strong><p class="sub" style="margin:6px 0 0 0">Angles, triangles &amp; area</p></div>
+<div class="card"><strong>Grammar Toolkit</strong><p class="sub" style="margin:6px 0 0 0">Tense, narration &amp; voice</p></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<main class="container">
+<section class="section reveal" id="courses">
+<h2>What you’ll learn</h2>
+<div class="grid-2">
+<div class="card">
+<ul class="list">
+<li><span class="dot"></span><span><strong>Math:</strong> Algebra, Arithmetic, Geometry, Trigonometry basics, Word problems, Speed Math tricks.</span></li>
+<li><span class="dot"></span><span><strong>English:</strong> Grammar, Writing, Comprehension, Vocabulary, Spoken practice.</span></li>
+<li><span class="dot"></span><span><strong>Exam Skills:</strong> Time management, smart shortcuts, chapter-wise mock practice.</span></li>
+<li><span class="dot"></span><span><strong>Coming soon:</strong> Admission prep &amp; higher-level math.</span></li>
+</ul>
+</div>
+<div class="grid-3">
+<div class="card"><span style="font-weight:800">Step-by-step</span><p class="sub">Concepts broken down into small, crystal-clear steps.</p></div>
+<div class="card"><span style="font-weight:800">Exam-focused</span><p class="sub">Worksheets &amp; mocks aligned to common question patterns.</p></div>
+<div class="card"><span style="font-weight:800">Learn anywhere</span><p class="sub">Watch recorded classes on phone, anytime—no fuss.</p></div>
+</div>
+</div>
+</section>
+<section class="section reveal testi">
+<h2>What students say</h2>
+<div class="grid-3">
+<div class="card">
+<div style="font-weight:800">“Explains so clearly!”</div>
+<p class="quote">I finally understand algebra. Short videos + practice = 🔥</p>
+<p>— A happy learner</p>
+</div>
+<div class="card">
+<div style="font-weight:800">“Very student-friendly”</div>
+<p class="quote">Notes and tricks helped me improve my exam timing a lot.</p>
+<p>— Exam candidate</p>
+</div>
+<div class="card">
+<div style="font-weight:800">“Flexible learning”</div>
+<p class="quote">Could watch on my phone anytime. Perfect for busy days.</p>
+<p>— School student</p>
+</div>
+</div>
+</section>
+<section class="section reveal card" id="contact">
+<h2 style="margin-top:0">Contact</h2>
+<p class="sub">Have a question or want to enroll? Reach out—responses within 24 hours.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin:10px 0 6px 0">
+<a class="btn btn-primary" href="https://wa.me/8801303676569" rel="noopener" target="_blank">WhatsApp</a>
+<a class="btn btn-outline" href="mailto:studywithharunbhaiya@gmail.com">Email</a>
+<a class="btn btn-outline" href="https://www.facebook.com/share/1AxJMSRxcx/?mibextid=wwXIfr" title="Facebook Page">Facebook</a>
+<a class="btn btn-outline" href="#" title="YouTube link coming soon">YouTube</a>
+</div>
+<div class="glass" style="margin-top:12px;padding:12px;border-radius:14px">
+<strong>Email:</strong> studywithharunbhaiya@gmail.com · <strong>WhatsApp:</strong> +8801303676569
+      </div>
+</section>
+</main>
+<footer class="footer">
+    © 2025 Study with Harun Bhaiya · All rights reserved
+  </footer>
+<div class="whatsapp">
+<a aria-label="Chat on WhatsApp" class="wa-btn" href="https://wa.me/8801303676569" rel="noopener" target="_blank">
+<svg aria-hidden="true" fill="currentColor" viewbox="0 0 32 32"><path d="M19.11 17.55c-.28-.14-1.64-.81-1.9-.9-.26-.1-.45-.14-.64.14-.19.28-.73.9-.9 1.09-.17.19-.35.21-.64.07-.28-.14-1.2-.44-2.29-1.42-.84-.75-1.4-1.68-1.57-1.96-.17-.28-.02-.43.12-.57.12-.12.28-.3.42-.45.14-.16.19-.26.28-.45.1-.19.05-.35-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.47h-.55c-.19 0-.5.07-.76.35-.26.28-1 1-1 2.42s1.03 2.81 1.17 3c.14.19 2.03 3.1 4.93 4.35.69.3 1.23.48 1.65.62.69.22 1.31.19 1.8.12.55-.08 1.64-.67 1.87-1.31.23-.64.23-1.19.16-1.31-.07-.13-.26-.2-.54-.34z"></path><path d="M15.99 4.8c-5.99 0-10.86 4.87-10.86 10.86 0 1.91.49 3.7 1.35 5.27L4 28l7.24-2.38a10.8 10.8 0 0 0 4.75 1.11c5.99 0 10.86-4.87 10.86-10.86S21.98 4.8 15.99 4.8zm0 19.72c-1.67 0-3.24-.43-4.61-1.19l-.33-.19-4.29 1.41 1.41-4.18-.21-.35a8.97 8.97 0 0 1-1.39-4.82c0-4.98 4.05-9.03 9.03-9.03s9.03 4.05 9.03 9.03c0 4.98-4.05 9.03-9.03 9.03z"></path></svg>
+      WhatsApp
+    </a>
+</div>
+<script>
+    const IO = new IntersectionObserver((entries)=>{entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); })},{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>IO.observe(el));
+  </script>
+</body>
+</html>
